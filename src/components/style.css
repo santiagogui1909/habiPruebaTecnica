@@ -1,0 +1,62 @@
+.inputsForms {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #323232;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+}
+  
+.inputsForms::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #838383;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+
+.inputsForms:focus + .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7320EA;
+}
+
+.inputsForms:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+.alertEmail{
+    color: #fc0000;
+    padding: 70px 40px;
+}
+
+.selectNumbers{
+    display:block;
+    border: 2px solid #7320EA;
+    color: black;
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 450px;
+    height:50px;
+}
