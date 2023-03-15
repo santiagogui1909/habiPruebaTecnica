@@ -1,11 +1,4 @@
 
-body {
-    background-color: #F3FCFF;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 0px;
-    padding: 0px;
-}
-
 header {
     background-color: #7320EA;
     display: flex;
@@ -134,7 +127,6 @@ header h1{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    /* width: 200px; */
     padding: 0px 40px;
     text-align: center;
 }
@@ -161,11 +153,73 @@ header h1{
     left: 4px;
 }
 
+
+/* Column of information summary panel */
+
+.columnPanel{
+    margin: 40px 100px;
+}
+
+.btnCloseProcess , .btnModal{
+    background-color: #f50808;
+    border: none;
+    border-radius: 2px;
+    color: #F3FCFF;
+    cursor: pointer;
+    bottom: -40px;
+    left: 340px;
+    position: relative;
+    padding: 10px;
+}
+
+.btnModal{
+    background-color: #11de0e;
+}
+
+.btnCloseProcess:hover{
+    background-color: #000000;
+}
+
+.sectionSteps h3{
+    background-color: #650ce2;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px;
+    width: 450px;
+}
+
+.btnModal{
+    display: none;
+}
+
+.stepsPanel{
+    display: block;
+    color: #000000;
+    font-size: 1.2rem;
+}
+
+.NoShow {
+    display: none;
+}
+
+.openSumary2{
+    position: absolute;
+    right: 140px;
+    transform: rotate(90deg);
+}
+
+.openSumary1{
+    position: absolute;
+    right: 140px;
+    transform: rotate(0deg);
+    transition: transform 0.6s ease-in-out;
+}
+
 footer{
     font-size: 1.1rem;
     text-align: center;
 }
-
 
 /* Animations */
 
@@ -189,4 +243,382 @@ footer{
     100% {
         transform: scale(1);
     }
+}
+
+/* responsive for tablet */
+@media (min-width: 481px) and  (max-width: 768px)  {
+
+    header {
+        background-color: #7320EA;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    
+    header h1{
+        animation: showTitle 1s ease-in-out;
+        color: #F3FCFF;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    .logo{
+        position: relative;
+        left: 20px;
+        height: 80px;
+        width: 150px;
+    }
+    
+    /* Styles for home */
+    
+    .containerHome{
+        display: grid;
+        grid-template-columns: 60%;
+        margin:20px;
+    }
+    
+    .columnOption{
+        width: 500px;
+    }
+    
+    .slogan {
+        font-size: 2.4rem;
+    }
+    
+    .columnOption span{
+        color: #7320EA;
+        font-size: 1.8rem;
+    }
+    
+    .boxBtns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 60px 0px;
+    }
+    
+    .boxBtns button{
+        font-size: 1.1rem;
+        padding: 20px;
+        width: 240px;
+    }
+    
+    .imageHome{
+        animation: imageShow 0.8s ease-in-out;
+        width: 450px;
+    }
+    
+    /* section form */
+    
+    .containerForm{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 20px 0px;
+    }
+    
+    .forms{
+        margin: 80px 40px;
+        text-align: center;
+        height: 500px;
+        width: 530px;
+    }
+    
+    .steps{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        color: #383838;
+        font-size: 1.4rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .form h2{
+        font-size: 2.4rem;    
+    }
+    
+    .inputContainer {
+        position: relative;
+        height: 40px;
+        width: 80%;
+        margin: 80px 40px;
+    }
+    
+    .boxBtnsForms{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    
+    .boxBtnsForms button{
+        width: 300px;
+    }
+
+    /* Column of information summary panel */
+
+    .columnPanel{
+        margin: 40px 40px;
+    }
+
+    .btnCloseProcess , .btnModal{
+        bottom: 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 20px;
+        padding: 20px;
+        left: 50px;
+        width: 400px;
+    }
+    
+    .sectionSteps h3{
+        background-color: #650ce2;
+        border-radius: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 40px 40px;
+        width: 400px;
+    }
+
+    .mobil{
+        display: none;
+    }
+
+    .btnModal{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .showModal{
+        background-color: #ffffff;
+        box-shadow: 2px 2px 10px #000000;
+        position: absolute;
+        top: 300px;
+        margin: 10px;
+        z-index: 1000;
+    }
+
+    .mobil{
+        display: none;
+    }
+
+    .stepsPanel{
+        display: block;
+        color: #000000;
+        font-size: 1rem;
+        padding-left: 40px;
+    }
+
+    .NoShow {
+        display: none;
+    }
+
+    .openSumary2{
+        right: 40px;
+    }
+
+    .openSumary1{
+        right: 40px;
+    }
+
+    footer{
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+}
+
+/* responsive for mobile */
+@media (min-width: 320px) and  (max-width: 480px)  {
+
+    header {
+        background-color: #7320EA;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px;
+    }
+    
+    header h1{
+        animation: showTitle 1s ease-in-out;
+        color: #F3FCFF;
+        font-size: 1.5rem;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    .logo{
+        position: relative;
+        left: 80px;
+        height: 100px;
+        width: 200px;
+    }
+    
+    /* Styles for home */
+    
+    .containerHome{
+        display: grid;
+        grid-template-columns: 60%;
+        margin:20px;
+    }
+    
+    .columnOption{
+        width: 300px;
+    }
+    
+    .slogan {
+        font-size: 1.6rem;
+    }
+    
+    .columnOption span{
+        color: #7320EA;
+        font-size: 1.2rem;
+    }
+    
+    .boxBtns{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 60px 20px;
+    }
+    
+    .boxBtns button{
+        font-size: 1.1rem;
+        padding: 20px;
+        width: 250px;
+    }
+    
+    .imageHome{
+        animation: imageShow 0.8s ease-in-out;
+        width: 280px;
+    }
+    
+    /* section form */
+    
+    .containerForm{
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 20px 0px;
+    }
+    
+    .forms{
+        margin: 80px 20px;
+        text-align: center;
+        height: 500px;
+        width: 360px;
+    }
+    
+    .steps{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        color: #383838;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        position: relative;
+        bottom: 40px;
+    }
+    
+    .form h2{
+        font-size: 2rem;    
+    }
+    
+    .inputContainer {
+        position: relative;
+        height: 40px;
+        width: 76%;
+        margin: 80px 20px;
+    }
+    
+    .boxBtnsForms{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 100px 20px;
+        text-align: center;
+    }
+    
+    .boxBtnsForms button{
+        width: 120px;
+    }
+
+    /* Column of information summary panel */
+
+    .columnPanel{
+        margin: 40px 0px;
+    }
+
+    .btnCloseProcess , .btnModal{
+        bottom: 30px;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 20px 0px;
+        padding: 20px;
+        left: 80px;
+        width: 220px;
+    }
+    
+    .sectionSteps h3{
+        background-color: #650ce2;
+        border-radius: 10px;
+        color: #ffffff;
+        cursor: pointer;
+        margin: 40px 40px;
+        width: 280px;
+    }
+
+    .mobil{
+        display: none;
+    }
+
+    .btnModal{
+        margin-top: 20px;
+        display: block;
+    }
+
+    .showModal{
+        background-color: #ffffff;
+        box-shadow: 2px 2px 10px #000000;
+        position: absolute;
+        top: 400px;
+        margin: 10px;
+        z-index: 1000;
+    }
+
+    .mobil{
+        display: none;
+    }
+
+    .stepsPanel{
+        display: block;
+        color: #000000;
+        font-size: 1rem;
+        padding-left: 40px;
+    }
+
+    .NoShow {
+        display: none;
+    }
+
+    .openSumary2{
+        right: 40px;
+    }
+
+    .openSumary1{
+        right: 40px;
+    }
+
+    footer{
+        font-size: 0.800rem;
+        text-align: center;
+    }
+    
 }

@@ -1,0 +1,22 @@
+body {
+    background-color: #F3FCFF;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body::-webkit-scrollbar {
+    background: #ffffff;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7320EA;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}

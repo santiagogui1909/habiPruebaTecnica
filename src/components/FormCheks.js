@@ -31,7 +31,7 @@ const FormCheks = () => {
 
     return (
         <>
-            <section>
+            <section className='listElements'>
                 <label>
                     <input className='checks' type="checkbox" value="zona BBQ"></input>
                 zona BBQ</label>
@@ -55,7 +55,7 @@ const FormCheks = () => {
                 parqueadero</label>
             </section>
             
-            <button onClick={() => getSpaces()}>guardar seleccion</button>
+            <button className='confirmSelects' onClick={() => getSpaces()}>guardar seleccion</button>
         </>
     );
 };

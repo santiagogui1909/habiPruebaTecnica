@@ -60,3 +60,348 @@
     width: 450px;
     height:50px;
 }
+
+.listElements{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.listElements label{
+    color: #000000;
+    font-size: 0.800rem;
+}
+
+.confirmSelects{
+    background-color: #7320EA;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-top: 14px;
+    padding: 6px 20px;
+    text-transform: capitalize;
+}
+
+.confirmSelects:hover{
+    background-color: #0d961d;
+}
+
+/* styles for section sumary */
+
+.titleSumary{
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.containerSumary{
+    display: flex;
+    color: #ffffff;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+
+.targetData{
+    background-color: #7320EA;
+    border-radius: 25px;
+    box-shadow: 0px 0px 14px #000000;
+    padding: 40px;
+    width: 500px;
+}
+
+.user{
+    display: grid;
+    grid-template-columns: 40% 70%;
+}
+
+.user img{
+    animation: animationImage 4s infinite;
+    background-color: #ffffff;
+    border-radius: 100%;
+    padding: 20px;
+    width: 150px;
+}
+
+.infoUser{
+    padding: 10px 20px;
+}
+
+.infoUser p{
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #000000;
+    font-size: 0.900rem;
+    padding: 10px;
+    width: 260px;
+}
+
+.infoUser span {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.listElementTitle{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding-left: 40px;
+    text-transform: capitalize;
+}
+
+.listElementHome{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.listElementHome li{
+    color: #ffffff;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.icon-home{
+    color: #27f3e5;
+    font-size: 1rem;
+    padding-left: 2px;
+}
+
+.btnFinish{
+    background-color: #ffffff;
+    border: none;
+    border: 4px solid #ffffff;
+    color: #7320EA;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    left: 25%;
+    position: relative;
+    padding: 10px;
+    top: 100px;
+    width: 250px;
+    transition: all 0.4s ease-in-out;
+}
+
+.btnFinish:hover{
+    background-color: transparent;
+    border: 4px solid #ffffff;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+@keyframes animationImage {
+    0%{
+        transform: scale3d(5);
+        box-shadow: 0px 0px 20px #ffffff;
+    }
+
+    25%{
+        transform: scale3d(8);
+        box-shadow: 0px 10px 10px #000000;
+    }
+
+    50%{
+        box-shadow: 0px 0px 10px 10px #000000;
+    }
+
+    75%{
+        box-shadow: 0px 10px 2px #848484;
+    }
+
+    100%{
+        box-shadow: 0px 0px 0px 6px #000000;
+    }
+}
+
+/* responsive for tablet */
+@media (min-width: 481px) and  (max-width: 768px) {
+    
+    /* styles for section sumary */
+    
+    .titleSumary{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .containerSumary{
+        display: flex;
+        color: #ffffff;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 20px;
+        gap: 40px;
+    }
+    
+    .targetData{
+        padding: 20px;
+        width: 480px;
+    }
+    
+    .user{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .user img{
+        position: relative;
+        left: 35%;
+        padding: 20px 30px;
+        width: 100px;
+    }
+    
+    .infoUser p{
+        background-color: #ffffff;
+        border-radius: 4px;
+        color: #000000;
+        font-size: 1rem;
+        padding: 15px;
+        width: 400px;
+    }
+    
+    .infoUser span {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    
+    .listElementTitle{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.4rem;
+        padding-left: 20px;
+        text-transform: capitalize;
+    }
+
+    .listElementHome{
+        height: 250px;
+    }
+    
+    .listElementHome li{
+        color: #ffffff;
+        font-size: 1.2rem;
+        list-style: none;
+    }
+    
+    .btnFinish{
+        left: 25%;
+        top: 0px;
+    }
+}
+
+/* responsive for mobile */
+@media (min-width: 320px) and  (max-width: 480px)  {
+    
+    .alertEmail{
+        color: #fc0000;
+        padding: 80px 20px;
+    }
+    
+    .selectNumbers{
+        padding: 10px;
+        width: 300px;
+        height:50px;
+    }
+
+    .listElements{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .listElements label{
+        color: #000000;
+        font-size: 0.800rem;
+        padding: 4px;
+    }
+
+    .confirmSelects{
+        background-color: #7320EA;
+        border: none;
+        color: #ffffff;
+        cursor: pointer;
+        margin-top: 14px;
+        padding: 6px 20px;
+        text-transform: capitalize;
+    }
+    
+    /* styles for section sumary */
+    
+    .titleSumary{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    
+    .containerSumary{
+        display: flex;
+        color: #ffffff;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 10px;
+        padding: 20px;
+        gap: 40px;
+    }
+    
+    .targetData{
+        padding: 20px;
+        width: 280px;
+    }
+    
+    .user{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    
+    .user img{
+        animation: animationImage 4s infinite;
+        background-color: #ffffff;
+        border-radius: 100%;
+        padding: 20px 60px;
+        width: 150px;
+    }
+    
+    .infoUser p{
+        background-color: #ffffff;
+        border-radius: 4px;
+        color: #000000;
+        font-size: 0.800rem;
+        padding: 10px;
+        width: 220px;
+    }
+    
+    .infoUser span {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+    
+    .listElementTitle{
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1rem;
+        padding-left: 20px;
+        text-transform: capitalize;
+    }
+
+    .listElementHome{
+        height: 300px;
+    }
+    
+    .listElementHome li{
+        color: #ffffff;
+        font-size: 0.700rem;
+        list-style: none;
+    }
+    
+    .btnFinish{
+        left: 5%;
+        top: 0px;
+    }
+}
