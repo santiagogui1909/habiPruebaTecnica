@@ -17,6 +17,7 @@ const Forms = () => {
     const state = useSelector(state => state.stateBtns);
     const dataUser = useSelector(state => state.formReducer);
 
+    // states
     const [count , setCount] = useState(1);
     const [activeBtnSpecific , setActiveBtnSpecific] = useState(0);
     const [saveInfo , setSaveInfo] = useState(false);
@@ -55,6 +56,8 @@ const Forms = () => {
       dispatch(activeBtn(true));
     },[count]);
   
+
+    // next step whit use of states
     const nextComponent = () => {
       setCount(count+1);
   
@@ -66,6 +69,7 @@ const Forms = () => {
       showComponet();
     }
   
+    // get elements and create a new component
     const showComponet = () => {
       let componentReturn = componentsArray.filter((value) => value.id === count);
       setComponents(React.createElement(componentReturn[0].component));

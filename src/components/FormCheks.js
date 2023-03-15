@@ -10,6 +10,7 @@ const FormCheks = () => {
     const dispatch = useDispatch();
     let array = [];
 
+    // add the elements and verify if exist in the array
     const getSpaces = () => {
         let checksElements = document.querySelectorAll('.checks');
 
