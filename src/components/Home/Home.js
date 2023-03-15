@@ -8,10 +8,10 @@ const Home = () => {
         <div className="containerHome">
             <section className="columnOption">
                 <p className="slogan">Si necesitas vender tu vivienda en 10 días habi te lo compra</p>
-                <span>Llena el formulario y cuéntanos de tu inmueble </span> 
+                <span className='phrase'>Llena el formulario y cuéntanos de tu inmueble </span> 
                 <article className='boxBtns'>
-                    <Link to='/forms'><button>Llenar formulario</button></Link>
-                    <a href='https://habi.co/' target='_blank'><button>Conocer mas de habi</button></a>
+                    <Link to='/forms'><button>Llenar formulario<span className='icon-left-hand'></span></button></Link>
+                    <a href='https://habi.co/' target='_blank'><button>Conocer mas de habi<span className='icon-search'></span></button></a>
                 </article>
             </section>
             <figure>

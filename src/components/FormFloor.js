@@ -14,14 +14,14 @@ const FormFloor = () => {
         let numbersFloors = '';
 
         for(let i = 1; i <= 50; i++) {
-            numbersFloors = `<option value=${i}>Piso ${i}</option>`;
-            document.getElementById('numbersFloors').innerHTML += numbersFloors;
+            numbersFloors += `<option value=${i}>Piso ${i}</option>`;
+            document.getElementById('numbersFloors').innerHTML = numbersFloors;
         }
     }
 
     useEffect(() => {
         numbersFloors();
-    },[]);
+    });
 
     const selectFloor = (e) => {
         dispatch(insetNumberFloor(e.target.value));
@@ -30,9 +30,7 @@ const FormFloor = () => {
 
     return (
         <>
-            <select id='numbersFloors' className='selectNumbers' onChange={(e) => selectFloor(e)}>
-                <option selected="selected" value="">Selecciona un piso</option> 
-            </select>
+            <select id='numbersFloors' className='selectNumbers' onChange={(e) => selectFloor(e)}></select>
         </>
     );
 };
